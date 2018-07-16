@@ -1,7 +1,8 @@
 /*
   
   Welcome to the bitwise wonderland, says the white rabbit :)
-
+  If you can't understand any of this, go flip burgers at McDonald's. 
+  
  */
 
 #include <stdio.h>
@@ -21,7 +22,7 @@
   The returned values are considered stable only if the measured target object exhibits 
   a CPU life span of at least 1000 cycles. Given that none of the functions present in this code
   last for that long, they'll be put inside a repetition loop to expand their life span and the 
-  probes will be inserted around the loop. The obtained results will be divided by the number of 
+  probes will be inserted around the repetition loop. The obtained results will be divided by the number of 
   iterations of the repetition loop : MAX_REP_ITER
   
  */
