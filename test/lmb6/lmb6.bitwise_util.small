@@ -1,6 +1,0 @@
-<lmb6>:
- 0x18eb: BSR	%EDI,%EDI
- 0x18ee: MOV	$-0x1,%EAX
- 0x18f3: CMP	$0x1f,%EDI
- 0x18f6: CMOVBE	%EDI,%EAX
- 0x18f9: RET

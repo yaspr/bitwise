@@ -18,4 +18,4 @@ Ofast:
 	$(CC) $(FLAGS) -Ofast $(BASENAME).c -o $(BASENAME).fast
 
 clean:
-	rm *~
+	rm -Rf *~
