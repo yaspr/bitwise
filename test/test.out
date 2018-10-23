@@ -1,0 +1,98 @@
+Compiling ...
+ 
+Running test for O0 - no optimization ...
+
+
+LEFT-MOST-BIT:
+ lmb1(0x0f008000)	ret:	27	cycles:	136.025073
+ lmb2(0x0f008000)	ret:	27	cycles:	31.098705
+ lmb3(0x0f008000)	ret:	27	cycles:	49.242908
+ lmb4(0x0f008000)	ret:	27	cycles:	57.224506
+ lmb5(0x0f008000)	ret:	27	cycles:	36.397064
+ lmb6(0x0f008000)	ret:	27	cycles:	7.314908
+
+POS-BIT:
+ POS-0(0x0f008000)	ret:	27	cycles:	25.436076
+ POS-1(0x0f008000)	ret:	27	cycles:	60.798927
+ POS-2(0x0f008000)	ret:	27	cycles:	22.400846
+ 
+Running test for O1 optimization level ...
+
+
+LEFT-MOST-BIT:
+ lmb1(0x0f008000)	ret:	27	cycles:	0.781998
+ lmb2(0x0f008000)	ret:	27	cycles:	11.933596
+ lmb3(0x0f008000)	ret:	27	cycles:	0.831576
+ lmb4(0x0f008000)	ret:	27	cycles:	0.781992
+ lmb5(0x0f008000)	ret:	27	cycles:	15.908260
+ lmb6(0x0f008000)	ret:	27	cycles:	0.877201
+
+POS-BIT:
+ POS-0(0x0f008000)	ret:	27	cycles:	10.521812
+ POS-1(0x0f008000)	ret:	27	cycles:	18.419568
+ POS-2(0x0f008000)	ret:	27	cycles:	0.740745
+ 
+Running test for O2 optimization level ...
+
+
+LEFT-MOST-BIT:
+ lmb1(0x0f008000)	ret:	27	cycles:	0.000018
+ lmb2(0x0f008000)	ret:	27	cycles:	0.000018
+ lmb3(0x0f008000)	ret:	27	cycles:	0.000107
+ lmb4(0x0f008000)	ret:	27	cycles:	0.000103
+ lmb5(0x0f008000)	ret:	27	cycles:	9.418506
+ lmb6(0x0f008000)	ret:	27	cycles:	1.822427
+
+POS-BIT:
+ POS-0(0x0f008000)	ret:	27	cycles:	12.672944
+ POS-1(0x0f008000)	ret:	27	cycles:	0.000278
+ POS-2(0x0f008000)	ret:	27	cycles:	0.000051
+ 
+Running test for O3 optimization level ...
+
+
+LEFT-MOST-BIT:
+ lmb1(0x0f008000)	ret:	27	cycles:	0.000018
+ lmb2(0x0f008000)	ret:	27	cycles:	0.000017
+ lmb3(0x0f008000)	ret:	27	cycles:	7.518519
+ lmb4(0x0f008000)	ret:	27	cycles:	4.643594
+ lmb5(0x0f008000)	ret:	27	cycles:	9.513036
+ lmb6(0x0f008000)	ret:	27	cycles:	1.172786
+
+POS-BIT:
+ POS-0(0x0f008000)	ret:	27	cycles:	9.468848
+ POS-1(0x0f008000)	ret:	27	cycles:	0.000028
+ POS-2(0x0f008000)	ret:	27	cycles:	0.000066
+ 
+Running test for Os optimization level ...
+
+
+LEFT-MOST-BIT:
+ lmb1(0x0f008000)	ret:	27	cycles:	0.000105
+ lmb2(0x0f008000)	ret:	27	cycles:	14.870216
+ lmb3(0x0f008000)	ret:	27	cycles:	0.000149
+ lmb4(0x0f008000)	ret:	27	cycles:	0.000107
+ lmb5(0x0f008000)	ret:	27	cycles:	14.871462
+ lmb6(0x0f008000)	ret:	27	cycles:	0.000053
+
+POS-BIT:
+ POS-0(0x0f008000)	ret:	27	cycles:	9.789699
+ POS-1(0x0f008000)	ret:	27	cycles:	0.000160
+ POS-2(0x0f008000)	ret:	27	cycles:	0.000026
+ 
+Running test for Ofast optimization level ...
+
+
+LEFT-MOST-BIT:
+ lmb1(0x0f008000)	ret:	27	cycles:	0.000018
+ lmb2(0x0f008000)	ret:	27	cycles:	0.000018
+ lmb3(0x0f008000)	ret:	27	cycles:	10.841333
+ lmb4(0x0f008000)	ret:	27	cycles:	4.762156
+ lmb5(0x0f008000)	ret:	27	cycles:	9.707163
+ lmb6(0x0f008000)	ret:	27	cycles:	1.630695
+
+POS-BIT:
+ POS-0(0x0f008000)	ret:	27	cycles:	10.112996
+ POS-1(0x0f008000)	ret:	27	cycles:	0.000024
+ POS-2(0x0f008000)	ret:	27	cycles:	0.000022
+ 

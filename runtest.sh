@@ -1,7 +1,7 @@
 bname="bitwise_util"
 
 echo "Compiling ...\n"
-make
+make >> /dev/null 2>> /dev/null
 echo " "
 
 echo -e "Running test for O0 - no optimization ...\n"

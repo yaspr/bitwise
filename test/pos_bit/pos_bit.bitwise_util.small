@@ -1,0 +1,72 @@
+<pos_bit_opti.part.1>:
+ 0x1649: MOV	$0x5,%ESI
+ 0x164e: MOV	$0xffff,%R8D
+ 0x1654: XOR	%EAX,%EAX
+ 0x1656: MOV	$0x10,%EDX
+ 0x165b: MOV	$-0x10000,%ECX
+  (4)0x1660: TEST	%ECX,%EDI
+  (4)0x1662: JE	1666 <pos_bit_opti.part.1+0x1d>
+  (4)0x1664: ADD	%EDX,%EAX
+  (4)0x1666: SAR	$0x1,%EDX
+  (4)0x1668: MOV	%EDX,%ECX
+  (4)0x166a: SAR	%CL,%R8D
+  (4)0x166d: LEA	(%RAX,%RDX,1),%ECX
+  (4)0x1670: MOV	%R8D,%R9D
+  (4)0x1673: SAL	%CL,%R9D
+  (4)0x1676: MOV	%R9D,%ECX
+  (4)0x1679: DEC	%ESI
+  (4)0x167b: JNE	1660 <pos_bit_opti.part.1+0x17>
+ 0x167d: RET
+<pos_bit>:
+ 0x18fa: MOV	$0x1f,%EDX
+ 0x18ff: TEST	%EDI,%EDI
+ 0x1901: JNE	190e <pos_bit+0x14>
+ 0x1903: PUSH	%RAX
+ 0x1904: MOV	$0x1,%EDI
+ 0x1909: CALL	1060 <exit@plt>
+  (11)0x190e: BT	%EDX,%EDI
+  (11)0x1911: MOV	%EDX,%EAX
+  (11)0x1913: JB	191e <pos_bit+0x24>
+  (11)0x1915: DEC	%EDX
+  (11)0x1917: CMP	$-0x1,%EDX
+  (11)0x191a: JNE	190e <pos_bit+0x14>
+ 0x191c: MOV	%EDX,%EAX
+ 0x191e: RET
+<pos_bit_opti>:
+ 0x191f: TEST	%EDI,%EDI
+ 0x1921: JNE	192e <pos_bit_opti+0xf>
+ 0x1923: PUSH	%RAX
+ 0x1924: MOV	$0x1,%EDI
+ 0x1929: CALL	1060 <exit@plt>
+ 0x192e: JMP	1649 <pos_bit_opti.part.1>
+<pos_bit_best>:
+ 0x1933: TEST	%EDI,%EDI
+ 0x1935: JNE	1942 <pos_bit_best+0xf>
+ 0x1937: PUSH	%RAX
+ 0x1938: MOV	$0x1,%EDI
+ 0x193d: CALL	1060 <exit@plt>
+ 0x1942: TEST	$-0x10000,%EDI
+ 0x1948: MOV	$0xff00,%EAX
+ 0x194d: SETNE	%CL
+ 0x1950: SAL	$0x4,%ECX
+ 0x1953: SAL	%CL,%EAX
+ 0x1955: TEST	%EDI,%EAX
+ 0x1957: SETNE	%AL
+ 0x195a: LEA	(%RCX,%RAX,8),%ECX
+ 0x195d: MOV	$0xf0,%EAX
+ 0x1962: SAL	%CL,%EAX
+ 0x1964: TEST	%EDI,%EAX
+ 0x1966: SETNE	%AL
+ 0x1969: LEA	(%RCX,%RAX,4),%ECX
+ 0x196c: MOV	$0xc,%EAX
+ 0x1971: SAL	%CL,%EAX
+ 0x1973: TEST	%EDI,%EAX
+ 0x1975: SETNE	%AL
+ 0x1978: LEA	(%RCX,%RAX,2),%ECX
+ 0x197b: MOV	$0x2,%EAX
+ 0x1980: SAL	%CL,%EAX
+ 0x1982: TEST	%EDI,%EAX
+ 0x1984: SETNE	%AL
+ 0x1987: ADD	%ECX,%EAX
+ 0x1989: RET
+ 0x198a: NOPW	(%RAX,%RAX,1)
